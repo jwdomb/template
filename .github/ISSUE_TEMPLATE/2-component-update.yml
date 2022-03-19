@@ -1,0 +1,32 @@
+name: "🛠 Component update"
+description: Suggest a change to an existing component
+labels: [component, request]
+body:
+- type: input
+  id: deadline
+  attributes:
+    label: "When do you need this change?"
+    description: "OPTIONAL. Mention events and deadlines, with lead times."
+  validations:
+    required: false
+- type: input
+  id: existing
+  attributes:
+    label: "Which component do you want to update?"
+  validations:
+    required: true
+- type: textarea
+  id: purpose
+  attributes:
+    label: "What is the purpose of the update?"
+    description: "Summarize in one well-written sentence. Explicitly connect to a larger business goal."
+    render: markdown
+  validations:
+    required: true
+- type: textarea
+  id: research
+  attributes:
+    label: "What sort of research or data might help us make a business case for this?"
+    description: "OPTIONAL. Summarize in bullet points. Attach or link to supporting information."
+  validations:
+    required: false

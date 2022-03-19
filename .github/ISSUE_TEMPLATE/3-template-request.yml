@@ -1,0 +1,71 @@
+name: "🎯 Template request"
+description: Suggest a new template for a particular page or content type
+labels: [template, request]
+body:
+- type: input
+  id: deadline
+  attributes:
+    label: "When do you need this template?"
+    description: "OPTIONAL. Mention events and deadlines, with lead times."
+  validations:
+    required: false
+- type: textarea
+  id: purpose
+  attributes:
+    label: "What is the purpose of this template?"
+    description: "Summarize in one well-written sentence. Explicitly connect to a larger business goal."
+    render: markdown
+  validations:
+    required: true
+- type: textarea
+  id: visitors
+  attributes:
+    label: "What do you know about visitors to the pages using this template?"
+  validations:
+    required: true
+- type: textarea
+  id: referrer
+  attributes:
+    label: "How would visitors arrive at pages using this template?"
+    description: "Be precise: it’s better to provide the details of your specific situation than generic answers."
+  validations:
+    required: true
+- type: textarea
+  id: content
+  attributes:
+    label: "In terms of content and functionality, what must, should, or could be included?"
+    description: "Make a bulleted list, even if you have other documents or a mockup. Keep in mind _who_ visits the page and their needs."
+    value: |
+      **Must**
+      Required by law or policy—please provide a link to more information
+
+      - 
+
+      **Should**
+      Needed to achieve page goals an provide a good experience
+
+      - 
+
+      **Could**
+      Nice to have in the first version
+
+      - 
+
+      If you have other wishlists, drafts, wireframes, rough content, research, data, competitive audits, inspiration links, etc., attach or link to them here.
+  validations:
+    required: true
+- type: textarea
+  id: goals
+  attributes:
+    label: "What do you hope people do after visiting pages using this template?"
+    description: "If there is more than one goal, rank them in a numbered list. Note differences by visitor type."
+    value: "1. "
+  validations:
+    required: true
+- type: textarea
+  id: research
+  attributes:
+    label: "What sort of research or data might help us make a business case for this?"
+    description: "OPTIONAL. Summarize in bullet points. Attach or link to supporting information."
+  validations:
+    required: false

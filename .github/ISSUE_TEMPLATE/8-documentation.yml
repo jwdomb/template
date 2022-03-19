@@ -1,0 +1,10 @@
+name: "📝 Documentation feedback"
+description: "Help make documentation better"
+labels: [docs, request]
+body:
+- type: textarea
+  id: message
+  attributes:
+    label: "Message"
+  validations:
+    required: true

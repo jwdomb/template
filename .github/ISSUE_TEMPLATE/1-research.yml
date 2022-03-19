@@ -1,0 +1,25 @@
+name: "🔎 Research request"
+description: Note an area for further investigation via user research
+labels: [research, request]
+- type: textarea
+  id: question
+  attributes:
+    label: "Question"
+    description: "What do you want to know? Try to write a single question."
+    render: markdown
+  validations:
+    required: true
+- type: textarea
+  id: context
+  attributes:
+    label: Context
+    description: "Share any other relevant information."
+  validations:
+    required: false
+- type: textarea
+  id: participants
+  attributes:
+    label: "Participants"
+    description: "What sort of people would provide the best data for this research?"
+  validations:
+    required: true

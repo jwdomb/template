@@ -1,0 +1,8 @@
+name: "🛎 General feedback"
+description: Let us know how we’re doing or inquire about something else
+labels: [feedback, request]
+body:
+- type: textarea
+  id: message
+  attributes:
+    label: Message

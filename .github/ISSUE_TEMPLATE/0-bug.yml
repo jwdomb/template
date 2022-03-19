@@ -1,0 +1,40 @@
+name: "🐛 Bug report"
+description: Help us fix broken things
+labels: [bug, request]
+body:
+- type: input
+  id: url
+  attributes:
+    label: Page URL(s) affected
+  validations:
+    required: true
+- type: textarea
+  id: problem
+  attributes:
+    label: Problem
+    description: "Describe what you expected to happen and what actually happened. If you know how to reproduce the problem, outline step-by-step instructions. Add screenshots or a screen capture if you can."
+- type: checkboxes
+  id: os
+  attributes:
+    label: Operating System
+    options:
+      - label: Android
+      - label: iOS
+      - label: macOS
+      - label: Windows
+      - label: Linux
+      - label: Other
+- type: checkboxes
+  id: browser
+  attributes:
+    label: Browser
+    options:
+      - label: Chrome
+      - label: Edge
+      - label: Firefox
+      - label: Internet Explorer
+      - label: Opera
+      - label: Safari
+      - label: Samsung Internet
+      - label: UC Browser
+      - label: Other

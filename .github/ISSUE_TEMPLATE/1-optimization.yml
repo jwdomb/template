@@ -1,0 +1,25 @@
+name: "📈 Optimization request"
+description: Note an area for testing of variations
+labels: [optimization, request]
+- type: textarea
+  id: context
+  attributes:
+    label: "Context"
+    description: "Identify the pages or contexts in which this test would take place."
+  validations:
+    required: true
+- type: textarea
+  id: hypothesis
+  attributes:
+    label: "Hypothesis"
+    description: "Write a question with a yes/no answer, identifying both the metric that should change and the direction of the change."
+    render: markdown
+  validations:
+    required: true
+- type: textarea
+  id: context
+  attributes:
+    label: Variations
+    description: "List the approaches you’d like to test."
+  validations:
+    required: false
